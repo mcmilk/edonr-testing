@@ -19,7 +19,7 @@
 const char *progname = "edonr-testing";
 const char *VERSION = "0.1";
 
-int opt_benchmark = 0;
+int opt_benchmark = 1;
 int opt_verbose = 0;
 int opt_iterations = 1;
 

@@ -460,6 +460,11 @@ Q512(size_t bitlen, const uint64_t *data, uint64_t *restrict p)
 void
 EdonRInit(EdonRState *state, size_t hashbitlen)
 {
+	/* silence un-init variables */
+	state->hashbitlen = 0;
+	state->bits_processed = 0;
+	state->unprocessed_bits = 0;
+
 	//ASSERT(EDONR_VALID_HASHBITLEN(hashbitlen));
 	switch (hashbitlen) {
 	case 224:
