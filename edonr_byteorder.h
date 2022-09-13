@@ -34,8 +34,8 @@
 #ifndef _CRYPTO_EDONR_BYTEORDER_H
 #define	_CRYPTO_EDONR_BYTEORDER_H
 
-//#include <sys/sysmacros.h>
-//#include <sys/param.h>
+#include <sys/sysmacros.h>
+#include <sys/param.h>
 
 #if defined(__BYTE_ORDER)
 #if (__BYTE_ORDER == __BIG_ENDIAN)

@@ -29,6 +29,14 @@
 #include <string.h>
 #include "edonr.h"
 
+#if __BYTE_ORDER == __BIG_ENDIAN
+#define _ZFS_BIG_ENDIAN
+#elif __BYTE_ORDER == __LITTLE_ENDIAN
+#define _ZFS_LITTLE_ENDIAN
+#else
+#error "byteorder == ???"
+#endif
+
 /*
  * We need 1196 byte stack for Q512() on i386
  * - we define this pragma to make gcc happy

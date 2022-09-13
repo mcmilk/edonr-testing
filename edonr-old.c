@@ -6,8 +6,8 @@
 
 #include "edonr.h"
 
-#define edonrInit(c,l)     EdonRInit_new(c,l)
-#define edonrUpdate(c,d,l) EdonRUpdate_new(c,d,l)
-#define edonrFinal(c,d)    EdonRFinal_new(c,d)
+#define edonrInit(c,l)     EdonRInit(c,l)
+#define edonrUpdate(c,d,l) EdonRUpdate(c,d,l)
+#define edonrFinal(c,d)    EdonRFinal(c,d)
 
 #include "main.c"
