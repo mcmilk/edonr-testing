@@ -2,6 +2,7 @@
 ## edonr-testing
 
 1) AMD Ryzen 7 PRO 5850U - Little Endian
+```
 $ ./edonr-tests -i6
 implementation               1k      4k     16k     64k    256k      1m      4m
 edonr-old                  1121     920     968    2593    2569    2582    2562
@@ -16,8 +17,10 @@ edonr-old                  2516    2571    2546    2543    2566    2557    2553
 edonr-new                  2711    2708    2713    2744    2746    2688    2723
 edonr-old                  2524    2560    2567    2569    2577    2548    2560
 edonr-new                  2694    2739    2689    2742    2727    2684    2692
+```
 
 2) POWER7 2.1 (pvr 003f 0201) - Big Endian
+```
 $ ./edonr-tests  -i6
 implementation               1k      4k     16k     64k    256k      1m      4m
 edonr-old                   953     972     964     958     959     961    1266
@@ -32,8 +35,10 @@ edonr-old                  1230    1258    1258    1266    1265    1267    1263
 edonr-new                  1390    1428    1418    1442    1443    1442    1443
 edonr-old                  1226    1253    1257    1266    1266    1268    1264
 edonr-new                  1378    1427    1429    1442    1442    1439    1449
+```
 
 3) UltraSparc T5 (Niagara5) - Big Endian
+```
 $ ./edonr-tests  -i6
 implementation               1k      4k     16k     64k    256k      1m      4m
 edonr-old                   684     686     686     689     692     689     690
@@ -48,3 +53,4 @@ edonr-old                   683     688     688     690     690     688     689
 edonr-new                   499     503     502     504     505     504     504
 edonr-old                   683     687     686     689     691     690     690
 edonr-new                   498     503     503     504     505     504     504
+```
