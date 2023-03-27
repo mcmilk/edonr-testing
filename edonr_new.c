@@ -26,16 +26,16 @@
  * Copyright (c) 2022 Tino Reichardt <milky-zfs@mcmilk.de>
  */
 
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <string.h>
+
 #include "edonr.h"
 
-#if __BYTE_ORDER == __BIG_ENDIAN
-#define _ZFS_BIG_ENDIAN
-#elif __BYTE_ORDER == __LITTLE_ENDIAN
-#define _ZFS_LITTLE_ENDIAN
-#else
-#error "byteorder == ???"
-#endif
+//#define	_ZFS_BIG_ENDIAN
+#define	_ZFS_LITTLE_ENDIAN
 
 /*
  * We need 1196 byte stack for Q512() on i386

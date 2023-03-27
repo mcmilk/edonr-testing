@@ -24,13 +24,15 @@ static void do_edonr(int fd, char hexl[DIGESTSZ/2+1], char hexd[DIGESTSZ+2])
 	char *t;
 	int i;
 	int c;
-	static uint8_t buf[1000];
+	static uint8_t buf[1024];
+	const uint8_t *data = buf;
 
 	edonrInit(&context, 512);
 
 	while ((len = read(fd, buf, sizeof(buf))) > 0) {
 		filelen += len;
-		edonrUpdate(&context, buf, len*8);
+		if (len)
+			edonrUpdate(&context, data, len*8);
 	}
 
 	t = hexl + 16;

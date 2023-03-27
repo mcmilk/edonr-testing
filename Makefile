@@ -2,8 +2,8 @@
 
 all: edonr-tests edonr-new edonr-old
 
-CC	= gcc
-#CC	= clang
+#CC	= gcc
+CC	= clang
 
 CFLAGS	= -Os -Wall
 
